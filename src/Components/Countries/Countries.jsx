@@ -13,7 +13,7 @@ const Countries = () => {
         .then(res => res.json())
         .then(data => SetCountries(data))
     }, [])
-
+    
     const handleVisitedCountry = country => {
         console.log('add this to your visited country');
         const newVisitedCountries = [...visitedCountries, country]
